@@ -13,6 +13,11 @@ public class ExampleApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        // TODO
+        // Initializing Firebase programmatically here does not work with FirebaseRemoteConfig.
+        // If you comment out this block & comment in google_app_id in strings.xml to let Firebase
+        // initialize automatically, FirebaseRemoteConfig *does* work. But I need to be able to
+        // initialize Firebase programmatically so I can specify the values below at runtime.
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setApplicationId(getString(R.string.firebase_app_id))
                 .setApiKey(getString(R.string.firebase_api_key))
