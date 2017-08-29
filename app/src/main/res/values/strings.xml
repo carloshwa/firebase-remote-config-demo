@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Firebase Remote Config Demo</string>
+
+    <!-- TODO Put your values here -->
+    <string name="firebase_app_id" translatable="false"></string>
+    <string name="firebase_api_key" translatable="false"></string>
+    <string name="firebase_url" translatable="false"></string>
+    <!--<string name="google_app_id" translatable="false">@string/firebase_app_id</string>-->
+</resources>
